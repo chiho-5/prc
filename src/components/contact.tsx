@@ -18,55 +18,55 @@ const Contact: FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-md mx-auto">
-      <div className='mb-2'>
-        <label
-          htmlFor='name'
-          className='mb-3 block text-base font-medium text-black'
+    <section className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
+      <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+        Get in Touch
+      </h2>
+      <form 
+        onSubmit={handleSubmit(onSubmit)} 
+        className="w-full max-w-lg bg-white shadow-lg rounded-2xl p-8 space-y-6"
+      >
+        <div>
+          <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+            Full Name
+          </label>
+          <input
+            type="text"
+            placeholder="John Doe"
+            className="w-full rounded-lg border border-gray-300 bg-gray-50 py-3 px-4 text-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-300 outline-none"
+            {...register('name', { required: true })}
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+            Email Address
+          </label>
+          <input
+            type="email"
+            placeholder="example@domain.com"
+            className="w-full rounded-lg border border-gray-300 bg-gray-50 py-3 px-4 text-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-300 outline-none"
+            {...register('email', { required: true })}
+          />
+        </div>
+        <div>
+          <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
+            Message
+          </label>
+          <textarea
+            rows={4}
+            placeholder="Write your message..."
+            className="w-full rounded-lg border border-gray-300 bg-gray-50 py-3 px-4 text-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-300 outline-none resize-none"
+            {...register('message', { required: true })}
+          ></textarea>
+        </div>
+        <button 
+          type="submit" 
+          className="w-full bg-purple-500 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-purple-600 transition-all"
         >
-          Full Name
-        </label>
-        <input
-          type='text'
-          placeholder='Full Name'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
-          {...register('name', { required: true })}
-        />
-      </div>
-      <div className='mb-5'>
-        <label
-          htmlFor='email'
-          className='mb-3 block text-base font-medium text-black'
-        >
-          Email Address
-        </label>
-        <input
-          type='email'
-          placeholder='example@domain.com'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
-          {...register('email', { required: true })}
-        />
-      </div>
-      <div className='mb-5'>
-        <label
-          htmlFor='message'
-          className='mb-3 block text-base font-medium text-black'
-        >
-          Message
-        </label>
-        <textarea
-          rows={4}
-          placeholder='Type your message'
-          className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
-          {...register('message', { required: true })}
-        ></textarea>
-      </div>
-      <div>
-        <button className='hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
-          Submit
+          Send Message
         </button>
-      </div>
-    </form>
+      </form>
+    </section>
   );
 };
 

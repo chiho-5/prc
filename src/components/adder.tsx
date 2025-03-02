@@ -1,38 +1,37 @@
-import { LucideSearch, ChevronRight } from "lucide-react";
+"use client";
 
-const services = [
-  { title: "Our company", desc: "Precious Global Consulting Services Sierra Leone is a Consortium Company" },
-  { title: "UK collaboration", desc: "Precious Global and Think Better services United Kingdom" },
-  { title: "Italy collaboration", desc: "Precious Global Services Di Sowa Mary Veronica Italy Rome" },
-  { title: "UK alliances", desc: "The British African Business Alliance United Kingdom," },
-  { title: "Sierra Leone Alliances", desc: "The Monic Investment and logistics Company Sierra Leone," },
-  { title: "Ivory Coast and Sierra Leone Alliances", desc: "The MKD Enterprise Ivory coast and Sierra Leone." },
-  { title: "In Partnership with", desc: "The Global Empowerment & Development Organization ;"}
-];
+import { useState } from "react";
+import { ChevronDown, ChevronRight } from "lucide-react";
 
-export function Adder() {
+interface FAQItemProps {
+  question: string;
+  answer: string;
+}
+
+export function Adder({ question, answer }: FAQItemProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => setIsOpen(!isOpen);
+
   return (
-    <div className="bg-gray-900 min-h-screen flex flex-col items-center text-white p-6">
-      <h2 className="text-3xl font-bold text-center text-purple-900">Precious Global Consortium Services International</h2>
-      <p className="text-gray-400 text-center mt-2 max-w-lg">
-        Precious Global Consortium is in partnership and startegic alliance with the following companies.
-      </p>
-
-      <button className="mt-6 flex items-center gap-2 px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-600 transition shadow-lg">
-        {/*<LucideSearch className="w-5 h-5" />*/}
-        <span>Reach to us for any of our services</span>
-      </button>
-
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-3xl">
-        {services.map((service, index) => (
-          <div key={index} className="bg-[#1a0a33] p-4 rounded-xl flex justify-between items-center shadow-md hover:bg-[#28104d] transition cursor-pointer">
-            <div>
-              <h3 className="text-lg font-semibold text-purple-300">{service.title}</h3>
-              <p className="text-gray-400 text-sm">{service.desc}</p>
-            </div>
-            <ChevronRight className="text-gray-400" />
-          </div>
-        ))}
+    <div
+      className="w-full max-w-2xl mx-auto bg-[#2a0e4a] p-5 rounded-lg shadow-md cursor-pointer hover:bg-[#3b1760] transition-all duration-300"
+      onClick={toggleDropdown}
+    >
+      <div className="flex justify-between items-center">
+        <h3 className="text-lg font-semibold text-purple-200">{question}</h3>
+        {isOpen ? (
+          <ChevronDown className="text-purple-400 transition-transform duration-300 rotate-180" />
+        ) : (
+          <ChevronRight className="text-gray-400 transition-transform duration-300" />
+        )}
+      </div>
+      <div
+        className={`overflow-hidden transition-all duration-300 ${
+          isOpen ? "max-h-40 mt-3 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <p className="text-gray-300 text-sm">{answer}</p>
       </div>
     </div>
   );

@@ -167,3 +167,17 @@ html, body {
 footer {
   margin-top: auto;
 }
+
+.logo {
+  width: 17rem; /* Adjust the width as needed */
+  height: 5rem; /* Adjust the height as needed */
+/*  color: white;*/
+  fill: #FFFFFF;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  fill: #ff6347; /* Change color on hover */
+}
+
