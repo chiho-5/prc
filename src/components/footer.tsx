@@ -10,16 +10,16 @@ export function Footer() {
         <h3 className="text-lg font-semibold text-gray-200 mb-4">Navigation</h3>
         <ul className="space-y-2">
           <li>
-            <a href="#" className="hover:text-indigo-400 transition duration-300">Home</a>
+            <a href="/" className="hover:text-indigo-400 transition duration-300">Home</a>
           </li>
           <li>
-            <a href="#" className="hover:text-indigo-400 transition duration-300">About Us</a>
+            <a href="/about-us" className="hover:text-indigo-400 transition duration-300">About Us</a>
           </li>
           <li>
-            <a href="#" className="hover:text-indigo-400 transition duration-300">Services</a>
+            <a href="/services" className="hover:text-indigo-400 transition duration-300">Services</a>
           </li>
           <li>
-            <a href="#" className="hover:text-indigo-400 transition duration-300">Contact</a>
+            <a href="/contact" className="hover:text-indigo-400 transition duration-300">Contact</a>
           </li>
         </ul>
       </div>
