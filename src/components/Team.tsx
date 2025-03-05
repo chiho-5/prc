@@ -29,7 +29,7 @@ export function Team() {
           <img
             src={member.image}
             alt={member.name}
-            className="w-32 h-32 mx-auto rounded-full object-cover border-4 border-purple-500"
+            className="w-32 h-32 mx-auto rounded-full object-contain border-4 border-purple-500"
           />
           <h3 className="text-lg font-semibold text-white mt-4">{member.name}</h3>
           <p className="text-purple-400 text-sm">{member.role}</p>
