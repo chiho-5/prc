@@ -28,9 +28,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-gray-900`}
       >
+       <div className="overflow-x-hidden">
       <Navbar />
         {children}
         <Footer />
+         </div>
       </body>
     </html>
   );
