@@ -36,7 +36,7 @@ export default function HomePage() {
     <>
       <Navbar />
       {/* Hero Section */}
-     <section className="w-full bg-gradient-to-r from-gray-900 to-black text-white py-16 mt-16 md:mt-20 overflow-hidden">
+  <section className="bg-gradient-to-r from-gray-900 to-black text-white py-16 mt-16 md:mt-20">
   <div className="container mx-auto flex flex-col md:flex-row items-center px-4 md:px-12 text-center md:text-left">
     <div className="md:w-1/2 mb-6 md:mb-0">
       <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
@@ -60,12 +60,13 @@ export default function HomePage() {
     </div>
     <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
       <Image
-        src="/hero.jpg"
-        alt="Doctor Online"
-        width={400}
-        height={400}
-        className="rounded-xl shadow-xl w-full max-w-xs sm:max-w-sm md:max-w-md"
-      />
+      src="/hero.jpg"
+      alt="Doctor Online"
+      width={400}
+      height={400}
+      className="rounded-xl shadow-xl w-full max-w-[90%] sm:max-w-sm md:max-w-md"
+/>
+
     </div>
   </div>
 </section>
