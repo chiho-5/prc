@@ -5,7 +5,8 @@ import { TrustSection } from "@/components/TrustSection";
 import { Features } from "@/components/features";
 import { Navbar } from "@/components/Nav";
 import { Adder } from "@/components/adder";
-
+import Testimonial from "@/components/Testimonial"
+import Listing from "@/components/Listing"
 const faqData = [
   {
     question: "What is Precious Global Consortium?",
@@ -75,6 +76,8 @@ export default function HomePage() {
       {/* Trust Section */}
       <TrustSection />
       <Features />
+      <Testimonial />
+      <Listing />
 
       <section className="py-20 bg-gray-800 text-white text-center overflow-hidden">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Businesses We Partner With</h2>
