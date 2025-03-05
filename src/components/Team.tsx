@@ -18,6 +18,11 @@ const teamMembers = [
     name: "Mr. Inegbedion isi Ehimen",
     role: " Nigeria Representative",
     image: "Nigerian.jpeg",
+  },
+   {
+    name: "Miss Shalom-Margaret Ijeoma Ejiogu Maryland",
+    role: "U.S.A Child advocate for African street and poor children in collaboration with Precious Global Consortium Services and Global Empowerment & Development Organization",
+    image: "shalom.jpeg",
   }
 ];
 
