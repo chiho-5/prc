@@ -29,7 +29,6 @@ const faqData = [
   },
 ];
 
-
 export default function HomePage() {
   const images = ["/think.jpeg", "/british.webp", "/prc.jpeg"];
 
@@ -37,7 +36,7 @@ export default function HomePage() {
     <>
       <Navbar />
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-gray-900 to-black text-white py-20 mt-16 md:mt-20">
+      <section className="w-full bg-gradient-to-r from-gray-900 to-black text-white py-20 mt-16 md:mt-20 overflow-hidden">
         <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 text-center md:text-left">
           <div className="md:w-1/2">
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
@@ -47,9 +46,15 @@ export default function HomePage() {
               Customized services tailored to individual client needs, delivered by a passionate and experienced team dedicated to quality and affordability.
             </p>
             <div className="mt-6 flex flex-col md:flex-row gap-4">
-             <a href="/about-us"> <Button className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-500 transition">About US</Button></a>
+              <a href="/about-us">
+                <Button className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-500 transition">
+                  About Us
+                </Button>
+              </a>
               <a href="/contact">
-               <Button variant="outline" className="bg-purple-600 border-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-500 transition">Contact Us</Button>
+                <Button className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-500 transition">
+                  Contact Us
+                </Button>
               </a>
             </div>
           </div>
@@ -101,24 +106,21 @@ export default function HomePage() {
         `}</style>
       </section>
 
- <div className="bg-gray-900 py-16 px-4">
-  <div className="max-w-3xl mx-auto">
-    <h2 className="text-2xl font-bold text-white text-center mb-4">
-      Frequently Asked Questions
-    </h2>
-    <p className="text-gray-400 text-center mb-6">
-      Have questions? Here are some answers to the most common ones!
-    </p>
-    <div className="space-y-5">
-      {faqData.map((item, index) => (
-        <Adder key={index} question={item.question} answer={item.answer} />
-      ))}
-    </div>
-  </div>
-</div>
-
-
-
+      <div className="bg-gray-900 py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-white text-center mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-gray-400 text-center mb-6">
+            Have questions? Here are some answers to the most common ones!
+          </p>
+          <div className="space-y-5">
+            {faqData.map((item, index) => (
+              <Adder key={index} question={item.question} answer={item.answer} />
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   );
 }
