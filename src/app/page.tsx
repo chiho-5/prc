@@ -36,39 +36,40 @@ export default function HomePage() {
     <>
       <Navbar />
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-gray-900 to-black text-white py-20 mt-16 md:mt-20 overflow-hidden">
-        <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 text-center md:text-left">
-          <div className="md:w-1/2">
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              Seize control of your precious time and experiences <span className="text-purple-400">with us</span>
-            </h1>
-            <p className="mt-4 text-gray-300">
-              Customized services tailored to individual client needs, delivered by a passionate and experienced team dedicated to quality and affordability.
-            </p>
-            <div className="mt-6 flex flex-col md:flex-row gap-4">
-              <a href="/about-us">
-                <Button className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-500 transition">
-                  About Us
-                </Button>
-              </a>
-              <a href="/contact">
-                <Button className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-500 transition">
-                  Contact Us
-                </Button>
-              </a>
-            </div>
-          </div>
-          <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
-            <Image
-              src="/hero.jpg"
-              alt="Doctor Online"
-              width={400}
-              height={400}
-              className="rounded-xl shadow-xl w-full max-w-xs sm:max-w-sm md:max-w-md"
-            />
-          </div>
-        </div>
-      </section>
+     <section className="w-full bg-gradient-to-r from-gray-900 to-black text-white py-16 mt-16 md:mt-20 overflow-hidden">
+  <div className="container mx-auto flex flex-col md:flex-row items-center px-4 md:px-12 text-center md:text-left">
+    <div className="md:w-1/2 mb-6 md:mb-0">
+      <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
+        Seize control of your precious time and experiences <span className="text-purple-400">with us</span>
+      </h1>
+      <p className="mt-4 text-gray-300">
+        Customized services tailored to individual client needs, delivered by a passionate and experienced team dedicated to quality and affordability.
+      </p>
+      <div className="mt-6 flex flex-col md:flex-row md:justify-center gap-4">
+        <a href="/about-us">
+          <Button className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-500 transition">
+            About Us
+          </Button>
+        </a>
+        <a href="/contact">
+          <Button className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-500 transition">
+            Contact Us
+          </Button>
+        </a>
+      </div>
+    </div>
+    <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
+      <Image
+        src="/hero.jpg"
+        alt="Doctor Online"
+        width={400}
+        height={400}
+        className="rounded-xl shadow-xl w-full max-w-xs sm:max-w-sm md:max-w-md"
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* Trust Section */}
       <TrustSection />
