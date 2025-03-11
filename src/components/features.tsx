@@ -75,7 +75,7 @@ export function Features() {
                 Travel Services
               </h3>
               <p className="text-gray-400">
-                We use Travelocity, sky scanner,kiwi,jet-cost,and Booking to find the best deals on flights and hotels,as well as different recommended insurance companies for safety trips abroad.
+              We use a selection of marketing leading reference points to find the best deals on flights and hotels,as well as different recommended insurance companies for safety trips abroad.
               </p>
             </article>
             <article>
@@ -92,7 +92,7 @@ export function Features() {
                 Management Consultancy Services
               </h3>
               <p className="text-gray-400">
-                Business and management Consulting services are a great way to get help with a complex issue and positive outcomes for your desired projects/businesses/companies and management.connect with us to make it excellent
+                Business and Management Consulting services are a great way to get help with a complex issue and positive outcomes for your desired projects/businesses/companies and management. Connect with us to make it excellent
               </p>
             </article>
             <article>
@@ -112,7 +112,7 @@ export function Features() {
                 Import and Export Services
               </h3>
               <p className="text-gray-400">
-                Import and export services are essential for businesses that want to expand their reach and increase their earnings.
+              "Import and export services are essential for businesses that want to expand their reach, access new markets, and increase their earnings."
               </p>
             </article>
             <article>
@@ -134,10 +134,10 @@ export function Features() {
                 <path d="m16.321 2-.5-.866 1.733-1 .5.866A22 22 0 0 1 21 12c0 3.852-1.017 7.636-2.948 10.97l-.502.865-1.73-1.003.501-.865A19.878 19.878 0 0 0 19 12a20 20 0 0 0-2.679-10Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Expert Business Consultancy
+              Business Research and Market Positioning
               </h3>
               <p className="text-gray-400">
-                We provide expert guidance, consultancy and strategic initiatives to help your business stand out from its competitors
+              We provide expert guidance, consultancy and strategic initiatives to help your business stand out from its competitors.
               </p>
             </article>
             <article>
@@ -154,10 +154,10 @@ export function Features() {
                 <path d="m7.454 2.891.891-.454L7.437.655l-.891.454a12 12 0 0 0 0 21.382l.89.454.91-1.781-.892-.455a10 10 0 0 1 0-17.818ZM17.456 1.11l-.891-.454-.909 1.782.891.454a10 10 0 0 1 0 17.819l-.89.454.908 1.781.89-.454a12 12 0 0 0 0-21.382Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Study Abroad Programmes and placements
+              Study Abroad Programmes and Placements
               </h3>
               <p className="text-gray-400">
-                Study abroad services can help you explore new cultures and learn new skills while you are away from home.
+              Study abroad services can help you explore new cultures, learn new skills and gain internationally recognised qualifications while you are away from home.
               </p>
             </article>
             <article>
@@ -177,7 +177,7 @@ export function Features() {
                 Fair Pricing
               </h3>
               <p className="text-gray-400">
-                We understand the situation and that's why we have a transparent pricing. Essentially do more for less.
+              We understand the situation and that's why we have a transparent pricing. Essentially,we do more for less.
               </p>
             </article>
           </div>

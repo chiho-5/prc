@@ -44,7 +44,7 @@ export default function HomePage() {
         Seize control of your precious time and experiences <span className="text-purple-400">with us</span>
       </h1>
       <p className="mt-4 text-gray-300">
-        Customized services tailored to individual client needs, delivered by a passionate and experienced team dedicated to quality and affordability.
+      Precious Global provides customised services tailored them to individual client needs, delivered by our passionate and experienced team dedicated to quality and affordability.
       </p>
       <div className="mt-6 flex flex-col md:flex-row md:justify-center gap-4">
         <a href="/about-us">

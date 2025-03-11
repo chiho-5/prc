@@ -5,20 +5,20 @@ const services = [
   {
     title: "Travel Services",
     description:
-      "We use Travelocity, Sky Scanner, Kiwi, Jet-cost, and Booking to find the best deals on flights and hotels, as well as different recommended insurance companies for safety trips abroad.",
+      "We use a selection of marketing leading reference points to find the best deals on flights and hotels, as well as different recommended insurance companies for safety trips abroad.",
     price: "$85 - $500",
   },
   {
     title: "Import and Export Consultancy",
     description:
       "Import and export services are essential for businesses that want to expand their reach and increase their earnings.",
-    price: "$100 - $1000",
+    price: "$250 - $1000",
   },
   {
     title: "Consulting Services",
     description:
       "Business and management consulting services help tackle complex issues and drive positive outcomes for businesses and projects. Connect with us to make it excellent.",
-    price: "$200 - $1000",
+    price: "$200 - $1000 per day" ,
   },
   {
     title: "Study Abroad & Exchange Programs",
