@@ -13,6 +13,7 @@ export function Navbar() {
       <nav className="hidden md:flex space-x-6">
         <a href="/" className="hover:text-purple-400 transition">Home</a>
         <a href="/services" className="hover:text-purple-400 transition">Services</a>
+        <a href="/profile" className="hover:text-purple-400 transition">Profile</a>
         <a href="/about-us" className="hover:text-purple-400 transition">About</a>
         <a href="/gallery" className="hover:text-purple-400 transition">Gallery</a>
         <a href="/contact" className="hover:text-purple-400 transition">Contact</a>
@@ -27,6 +28,7 @@ export function Navbar() {
           <div className="flex flex-col space-y-6 text-lg">
             <a href="/" className="hover:text-purple-400 transition">Home</a>
             <a href="/services" className="hover:text-purple-400 transition">Services</a>
+            <a href="/profile" className="hover:text-purple-400 transition">Profile</a>
             <a href="/about-us" className="hover:text-purple-400 transition">About</a>
             <a href="/gallery" className="hover:text-purple-400 transition">Gallery</a>
             <a href="/contact" className="hover:text-purple-400 transition">Contact</a>
