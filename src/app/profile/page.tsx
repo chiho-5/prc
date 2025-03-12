@@ -96,9 +96,11 @@ export default function ProfilePage() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="mt-10"
       >
-        <Button className="bg-purple-600 hover:bg-purple-500 text-white px-6 py-3 rounded-full text-lg">
+        <a href="/contact">
+          <Button className="bg-purple-600 hover:bg-purple-500 text-white px-6 py-3 rounded-full text-lg">
           Contact Us
         </Button>
+          </a>
       </motion.div>
 
 
