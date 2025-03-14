@@ -6,7 +6,7 @@ export function Navbar() {
   return (
     <header className="w-full bg-gray-900 text-white py-4 px-6 flex justify-between items-center shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="text-xl font-bold group">
-        PRECIOUS GLOBAL CONSORTIUM
+        PRECIOUS GLOBAL CONSORTIUM LTD
       </div>
 
       {/* Desktop Navigation */}
