@@ -31,7 +31,7 @@ const faqData = [
 ];
 
 export default function HomePage() {
-  const images = ["/think.jpeg", "/british.webp", "/prc.jpeg"];
+  const images = ["/logo3.jpeg", "/logo4.webp", "/logo5.jpeg", "/logo6.jpeg", "/logo7.jpeg"];
 
   return (
     <>
