@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <div className="bg-gray-900 text-white py-16 px-6 md:px-20">
       {/* Hero Section */}
-      <div className="text-center max-w-3xl mx-auto">
+      <div className="text-center max-w-3xl mx-auto mt-4">
         <h1 className="text-4xl font-bold text-purple-400">About Us</h1>
         <p className="text-gray-400 mt-4">
           Our Consortium Companies operates in different business area like Consultancy Services,International Recruitment Services,Travel agency Services,Professional assistance,Work & Study abroad, Import and Export services, Clearing and Forwarding Services, Exportation of Mineral Resources,Real Estate services,Educational services , Managements & Brokers services, Project Managements etc. 
