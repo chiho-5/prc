@@ -16,22 +16,55 @@ const services = [
   { title: "Conferences and Events", description:"Conferences, exhibitions, trade fairs, and training events are all types of gatherings that serve specific purposes in various industries. Each of these events plays a unique role in bringing together professionals, businesses, and organizations to network, showcase products and services, exchange knowledge, and enhance skills. Here is an overview of each type of event:"}
 ];
 
-export default function ServicesPage()  {
+// export default function ServicesPage()  {
+//   const variants = {
+//     hidden: { opacity: 0, y: 50 },
+//     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+//   };
+
+//   return (
+//     <div className="bg-gray-900 text-white py-16 px-6 md:px-20">
+//       <div className="text-center max-w-3xl mx-auto">
+//         <h1 className="text-4xl font-bold text-purple-400">Our Services</h1>
+//         <p className="text-gray-400 mt-4">
+//           We provide a range of services to simplify your needs and make sure you get the best there is.
+//         </p>
+//       </div>
+
+//       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+//         {services.map((service, index) => (
+//           <motion.div
+//             key={index}
+//             initial="hidden"
+//             whileInView="visible"
+//             variants={variants}
+//             viewport={{ once: false, amount: 0.2 }}
+//             className="bg-gray-800 p-6 rounded-xl shadow-lg hover:bg-purple-700 transition"
+//           >
+//             <h3 className="text-xl font-semibold text-purple-400">{service.title}</h3>
+//             <p className="text-gray-400 mt-2">{service.description}</p>
+//           </motion.div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+export default function ServicesPage() {
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
 
   return (
-    <div className="bg-gray-900 text-white py-16 px-6 md:px-20">
-      <div className="text-center max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-purple-400">Our Services</h1>
+    <div className="bg-gray-900 text-white py-16 px-4 md:px-20">
+      <div className="text-center max-w-3xl mx-auto mt-4">
+        <h1 className="text-3xl font-bold text-purple-400 md:text-4xl">Our Services</h1>
         <p className="text-gray-400 mt-4">
           We provide a range of services to simplify your needs and make sure you get the best there is.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         {services.map((service, index) => (
           <motion.div
             key={index}
@@ -39,9 +72,9 @@ export default function ServicesPage()  {
             whileInView="visible"
             variants={variants}
             viewport={{ once: false, amount: 0.2 }}
-            className="bg-gray-800 p-6 rounded-xl shadow-lg hover:bg-purple-700 transition"
+            className="bg-gray-800 p-4 rounded-xl shadow-lg hover:bg-purple-700 transition md:p-6"
           >
-            <h3 className="text-xl font-semibold text-purple-400">{service.title}</h3>
+            <h3 className="text-lg font-semibold text-purple-400 md:text-xl">{service.title}</h3>
             <p className="text-gray-400 mt-2">{service.description}</p>
           </motion.div>
         ))}
