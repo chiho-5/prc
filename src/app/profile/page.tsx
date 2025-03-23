@@ -32,7 +32,7 @@ export default function ProfilePage() {
         transition={{ duration: 0.5 }}
         className="text-center mt-10"
       >
-        <h1 className="text-5xl font-bold mb-4">Precious Global Consortium LTD</h1>
+        <h1 className="text-5xl font-bold mt-5">Precious Global Consortium LTD</h1>
         <p className="text-lg text-gray-300 max-w-2xl">
           Enhancing the socio-economic landscape of Sierra Leone through innovation and entrepreneurship.
         </p>
